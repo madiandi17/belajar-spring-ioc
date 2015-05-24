@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+">
+    <bean id="andi" class="com.wordpress.bmadi.belajar.spring.ioc.domain.Person">
+        <property name="firstName" value="Madi"></property>
+        <property name="lastName" value="Andi"></property>
+        <property name="address" ref="palembang"></property>
+    </bean>
+    
+    <bean id="palembang" class="com.wordpress.bmadi.belajar.spring.ioc.domain.Address">
+        <property name="jalan" value="Jl. Madi Andi"></property>
+        <property name="kota" value="Gumawang"></property>
+        <property name="kodePos" value="121712"></property>
+    </bean>
+
+</beans>
